@@ -27,6 +27,7 @@
         // ignore global components
         "ignorePatterns": [
           "^st-",
+          "router-link",
           "router-view",
           "vue-good-table",
           "loading-overlay"

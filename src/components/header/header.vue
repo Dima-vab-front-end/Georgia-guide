@@ -28,7 +28,13 @@
                 Авто маршрyты
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Длинные маршруты</a></li>
+                <li>
+                  <router-link
+                    class="dropdown-item"
+                    :to="Enums.PageUrl.CarRoutes">
+                    Длинные маршруты
+                  </router-link>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#"
                     >Маршруты из Тбилиси на 1 день</a
@@ -70,3 +76,7 @@
     </nav>
   </header>
 </template>
+
+<script lang="ts" setup>
+import { Enums } from '@shared';
+</script>

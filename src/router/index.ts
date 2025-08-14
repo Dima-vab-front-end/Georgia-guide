@@ -25,9 +25,17 @@ export function setupRouter() {
       }
     },
     {
-      path: Enums.PageUrl.Page404,
-      redirect: Enums.PageUrl.HomePage
+      path: Enums.PageUrl.CarRoutes,
+      name: 'Root',
+      component: () => import('../views/car-routes/car-routes.vue'),
+      meta: {
+        title: `Car Routes`
+      }
     }
+    // {
+    //   path: Enums.PageUrl.Page404,
+    //   redirect: Enums.PageUrl.HomePage
+    // }
   ];
 
   const router = createRouter({
