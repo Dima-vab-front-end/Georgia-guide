@@ -8,3 +8,5 @@
 import { AppHeader } from './components/header';
 import { AppFooter } from './components/footer';
 </script>
+
+<style lang="scss" src="./app.scss"></style>

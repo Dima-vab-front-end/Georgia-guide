@@ -106,7 +106,7 @@ module.exports = defineConfig({
                 loader: 'sass-loader',
                 options: {
                   additionalData: `
-                     @import "@stihlus/vue-ui-library/variables.scss";
+                  @import './src/styles/variables.scss';
                   `
                 }
               }
