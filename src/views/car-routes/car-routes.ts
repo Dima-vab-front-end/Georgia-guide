@@ -142,6 +142,71 @@ export default function () {
             'https://gotrip.ge/blog/wp-content/uploads/2022/12/shutterstock_1434243356.jpeg'
         }
       ]
+    },
+    {
+      id: '2',
+      title: 'Через Вардзию',
+      navigationRoute:
+        'https://yandex.ru/navi?rtext=41.788341%2C44.739871~42.764270%2C43.508032~42.701582%2C43.674904~42.547145%2C42.870687~42.654805%2C42.773213~42.495279%2C42.551079&rtt=auto', //add from yandex map
+      description:
+        'Классный маршрут, через пещерный город исамую красивую крепость Грузии',
+      image: 'https://v-georgia.com/wp-content/uploads/2015/06/vardzia4.jpg',
+
+      children: [
+        {
+          id: '21',
+          title: 'Каньен Дашбаши',
+          description: `Красивый каньен с стекляным мостом, но стоит много, поэтому можно просто взглянуть со стороны и ехать дальше`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/x7HzucvRf1V1ZvgF6'
+            }
+          ],
+          image:
+            'https://zectour.com/ru/image/loadimage?f=https://zectour.com/public/filemanager/1%20SEDANIT%20TUREBI/21%20DASHBASHI/2.jpg&w=480&h=400'
+        },
+        {
+          id: '22',
+          title: 'Вардзиа(пещерный город)',
+          description:
+            'Очень аутентичное место, главное не остановится и пройти в внутреннтих пещерах, вход возле церкви.',
+          image:
+            'https://img-fotki.yandex.ru/get/5310/41972460.a1/0_df31f_b2cafc59_orig.jpg',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/11WhYkLyyZxDsK1s6'
+            }
+          ]
+        },
+        {
+          id: '23',
+          title: 'Крепость Рабат(Турецко-Грузинская крепость)',
+          description: `Самая красивая крепость в Грузии. Большая часть бесплатная, но есть и платная зона`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/ajBhXq422jeD8qbb9'
+            }
+          ],
+          image:
+            'https://hoponhopoff-tbilisi.com/wp-content/uploads/2018/04/Hop-on-hop-off-tbilisi-Borjomi-Krepost-Rabat-00001.jpg'
+        },
+        {
+          id: '24',
+          title: 'Боржоми',
+          description: `В городе производят воду Боржоми, а так ничего особого, но есть теплые источники.`,
+          image:
+            'https://georgia.in-facts.info/wp-content/uploads/2019/01/Most-petlya-okolo-otelya---Crowne-Plaza-Borjomi---Borzhomi-Gruziya.jpg',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/2g292a3MkUimhBVa8'
+            }
+          ]
+        }
+      ]
     }
   ];
 
