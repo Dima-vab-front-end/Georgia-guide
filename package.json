@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "entry-port": "cross-env PORT=1234",
-    "serve": " npm run entry-port vue-cli-service serve",
+    "entry-port": "cross-env HOST=0.0.0.0 PORT=1234",
+    "serve": "npm run entry-port vue-cli-service serve",
     "build": "vue-cli-service build",
     "build-dev": "vue-cli-service build --mode development",
     "format": "npm run prettier && npm run lint",

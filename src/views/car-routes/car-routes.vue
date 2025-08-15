@@ -17,8 +17,7 @@
           {{ additionalContent.title }}
         </h5>
         <iframe
-          width="560"
-          height="315"
+          class="video"
           :src="additionalContent.youtubeLink"
           title="YouTube video player"
           frameborder="0"
@@ -52,7 +51,7 @@
             <div class="accordion-body">
               <div>{{ child.description }}</div>
 
-              <img class="main-image" :src="child.image" />
+              <img class="route-image" :src="child.image" />
 
               <section v-if="child.additionalContent?.length" class="mt-4">
                 <div v-for="additionalContent of child.additionalContent">
@@ -67,8 +66,8 @@
                   >
                   <iframe
                     v-if="additionalContent.youtubeLink"
-                    :width="additionalContent.isShorts ? 315 : 560"
-                    :height="additionalContent.isShorts ? 560 : 315"
+                    class="video"
+                    :class="{ shorts: additionalContent.isShorts }"
                     :src="additionalContent.youtubeLink"
                     title="YouTube video player"
                     frameborder="0"
