@@ -33,6 +33,10 @@ export default function () {
                 'https://www.youtube.com/embed/TRfE5nWH_TI?si=thK4f3PTrSDs194R',
               title:
                 'Наше видео c похода в той местности к самому красивому озеру в Грузии'
+            },
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/s2PesoU8WDLMwa2EA'
             }
           ],
           image:
@@ -44,13 +48,25 @@ export default function () {
           description:
             'Прикольное место по дороге, можно сильно долго время не тратить и не гулять, не моуг разместить в личный топ, но если такое привлекает, то почему нет',
           image:
-            'https://madloba.info/media/images/Kolonny-Sairme.max-1200x1200.format-webp.webp'
+            'https://madloba.info/media/images/Kolonny-Sairme.max-1200x1200.format-webp.webp',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/mm3UUVFyuU1XL3Dx9'
+            }
+          ]
         },
         {
           id: '13',
           title: 'Цагери (очень красивое ущелье по дороге)',
           description: `по дороге очень красивое ущелье в котором нужно ехать, 
           а в самой деревне ничего нет, просто маршрут красивый`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/C4wXFkKUZqpwuSFV6'
+            }
+          ],
           image:
             'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Lajanura_Gorge_%28G.N._2009%29.jpg/1200px-Lajanura_Gorge_%28G.N._2009%29.jpg'
         },
@@ -59,7 +75,13 @@ export default function () {
           title: 'Ophitara Three Cascade Waterfall',
           description: `Приятная точка остановится и немного отдохнуть`,
           image:
-            'https://www.reinisfischer.com/sites/default/files/inline-images/DJI_0386-HDR.jpg'
+            'https://www.reinisfischer.com/sites/default/files/inline-images/DJI_0386-HDR.jpg',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/Fg3uJBgDa8CWdBuN8'
+            }
+          ]
         },
         {
           id: '15',
@@ -71,6 +93,10 @@ export default function () {
               youtubeLink:
                 'https://youtube.com/embed/Hx6p9_Rl5Io?si=6KOVkbWmES0Dmb-P',
               title: 'Наш шортс из этого места'
+            },
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/7PvWxJT842jaV7jp8'
             }
           ],
           image:
@@ -81,19 +107,37 @@ export default function () {
           title: 'Кинчха Каньен',
           description: `Там же рядом очень красивый каньен Кинчха по которому можно бесплатно погулять и в нем поплавать`,
           image:
-            'https://bptrip.ru/wp-content/uploads/2017/05/vodopady-kutaisi-gruzia.jpg'
+            'https://bptrip.ru/wp-content/uploads/2017/05/vodopady-kutaisi-gruzia.jpg',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/qoDzmgUAJ6dzwFmn7'
+            }
+          ]
         },
         {
           id: '17',
           title: 'Ломина Водопад',
           description: `Приятный водопад рядом с предыдущей точкой(5км). Из интересного что под ним можно походить, высота его метров 8 примерно`,
-          image: 'https://storage.georgia.travel/images/lomina-gnta.webp'
+          image: 'https://storage.georgia.travel/images/lomina-gnta.webp',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/7PvWxJT842jaV7jp8'
+            }
+          ]
         },
         {
           id: '18',
           title: 'Каньен Мартвили',
           description: `Очень известное туристическое место, вход 15-20лари, за еще 15лари можно покататься на лодке минут 15
           Вообще очень красиво там и впечатлсяюще`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/yt6TWaXswtyJKvFv8'
+            }
+          ],
           image:
             'https://gotrip.ge/blog/wp-content/uploads/2022/12/shutterstock_1434243356.jpeg'
         }

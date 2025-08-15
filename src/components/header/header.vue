@@ -1,8 +1,8 @@
 <template>
   <header class="w-100">
-    <div>
+    <!-- <div>
       <h3 class="d-flex p-3 mb-0">Georgian guide</h3>
-    </div>
+    </div> -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
