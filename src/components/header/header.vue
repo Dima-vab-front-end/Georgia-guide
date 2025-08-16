@@ -1,8 +1,8 @@
 <template>
   <header class="w-100">
-    <div>
-      <h3>Georgian guide</h3>
-    </div>
+    <!-- <div>
+      <h3 class="d-flex p-3 mb-0">Georgian guide</h3>
+    </div> -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -28,7 +28,13 @@
                 Авто маршрyты
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Длинные маршруты</a></li>
+                <li>
+                  <router-link
+                    class="dropdown-item"
+                    :to="Enums.PageUrl.CarRoutes">
+                    Длинные маршруты
+                  </router-link>
+                </li>
                 <li>
                   <a class="dropdown-item" href="#"
                     >Маршруты из Тбилиси на 1 день</a
@@ -70,3 +76,7 @@
     </nav>
   </header>
 </template>
+
+<script lang="ts" setup>
+import { Enums } from '@shared';
+</script>
