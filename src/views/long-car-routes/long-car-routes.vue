@@ -5,8 +5,6 @@
 
 <script setup lang="ts">
 import { RoutesComponent } from '@src/components/routes';
-import carRoutes from './car-routes';
+import carRoutes from './long-car-routes';
 const root = carRoutes();
 </script>
-
-<!-- <style lang="scss" src="./car-routes.scss"></style> -->

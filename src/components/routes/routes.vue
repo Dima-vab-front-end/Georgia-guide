@@ -3,7 +3,7 @@
     <div
       v-for="(item, index) of root.props.routes"
       :key="item.id || index"
-      class="accordion-item mt-3 car-route-container">
+      class="accordion-item mt-5 mb-3 car-route-container">
       <h2 class="accordion-header" :id="'route-heading-' + index">
         <button
           class="accordion-button collapsed"
@@ -30,6 +30,7 @@
               Открыть маршрут в новигаторе
             </a>
           </h4>
+          <div>{{ item.description }}</div>
 
           <section v-if="item.additionalContent?.length" class="mt-3">
             <div
@@ -38,6 +39,7 @@
               <h5>{{ additionalContent.title }}</h5>
               <iframe
                 class="video"
+                :class="{ shorts: additionalContent.isShorts }"
                 :src="additionalContent.youtubeLink"
                 title="YouTube video player"
                 frameborder="0"
@@ -116,7 +118,7 @@
     <section
       v-for="(item, index) of root.props.routes"
       :key="'desktop-' + (item.id || index)"
-      class="mt-3 car-route-container">
+      class="mt-5 pb-5 car-route-container">
       <div class="mb-2">
         <h2 class="m-0 pb-1">{{ index + 1 }}. {{ item.title }}</h2>
         <div><img class="accordion-header-image" :src="item.image" /></div>
@@ -128,6 +130,7 @@
             Открыть маршрут в новигаторе
           </a>
         </h4>
+        <div>{{ item.description }}</div>
 
         <section v-if="item.additionalContent?.length" class="mt-3">
           <div
@@ -136,6 +139,7 @@
             <h5>{{ additionalContent.title }}</h5>
             <iframe
               class="video"
+              :class="{ shorts: additionalContent.isShorts }"
               :src="additionalContent.youtubeLink"
               title="YouTube video player"
               frameborder="0"
