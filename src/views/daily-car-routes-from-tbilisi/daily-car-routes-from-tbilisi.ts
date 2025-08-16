@@ -119,16 +119,214 @@ export default function () {
       title: 'Озера Абуделаури',
       navigationRoute:
         'https://yandex.ru/navi?rtext=41.788341%2C44.739871~42.764270%2C43.508032~42.701582%2C43.674904~42.547145%2C42.870687~42.654805%2C42.773213~42.495279%2C42.551079&rtt=auto', //add from yandex map
-      description: `Средней сложности однодневный хайк, зайти в 2 стороны можно за 4-5 часов, прогулка по очень красивому лесу, местами вдоль горной реки.
-         Даже внизу, если никуда не идти, это очень красивое место.Можно поехать многодневным маршрутом №3.
-         Рекомендую выезжать из Тбилиси до 10 утра, чтобы спокойно приехать, пройтись и уехать.`,
-      image: 'public/abudelauri.jpg',
+      description: `Очень легкий хайк, стартовать нужно за деревней Рошка, поход к Зеленому и Голубому озеру очень легкий, а к Белому посложнее будет. Плохая и опасная грунтовка последние 4-5км.
+      Если жалко авто, то лучше взять тур на воскресенье и с группой пройтись`,
+      image: '/abudelauri.jpg',
       additionalContent: [
         {
           isShorts: true,
           youtubeLink:
-            'https://youtube.com/embed/ne-43WMa8Q4?si=-cLnYC62S0cVLThp',
+            'https://youtube.com/embed/7FjOB0bhtTw?si=R_hAAbsXwI-Spq-i',
           title: 'Наш шортс из этого места'
+        }
+      ]
+    },
+
+    {
+      id: '4',
+      title: 'Кахетия',
+      navigationRoute:
+        'https://yandex.ru/navi?rtext=41.788341%2C44.739871~42.764270%2C43.508032~42.701582%2C43.674904~42.547145%2C42.870687~42.654805%2C42.773213~42.495279%2C42.551079&rtt=auto', //add from yandex map
+      description:
+        'Классная возможность заехать в совершенно необычные для Грузии пезажи, полупыстиня, разноцветные холмы и виды на Алазанскую долину',
+      additionalContent: [
+        {
+          isShorts: true,
+          youtubeLink: 'https://www.youtube.com/embed/6nWkeNEEkMs',
+          title: 'Наш шортс из первой точки на маршруте'
+        }
+      ],
+      image: '/lavra.jpg',
+      children: [
+        {
+          id: '41',
+          title: 'Лавра Давида Гареджийского',
+          description: `Приятное тихое место, часть крепости высечена в скале и прекрасные пезажи на разноцветные холмы.`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/Scec942JK5t7Bc236'
+            }
+          ],
+          image: '/lavra.jpg' // TODO add image
+        },
+        {
+          id: '42',
+          title: 'Сигнахи(город с красивыми видами)',
+          description: `Приятный городок, если повезет то будет классный вид на Кавказский хребет. Классное место чтобы зайти в кафе и запилить красивый видос или фотки)`,
+          image:
+            'https://gotrip.ge/blog/wp-content/uploads/2022/11/shutterstock_signagi_2.jpg',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/vEvS6avEPEV2MGhW8'
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      id: '5',
+      title: 'Вардзия-Рабат',
+      navigationRoute:
+        'https://yandex.ru/navi?rtext=41.788341%2C44.739871~42.764270%2C43.508032~42.701582%2C43.674904~42.547145%2C42.870687~42.654805%2C42.773213~42.495279%2C42.551079&rtt=auto', //add from yandex map
+      description: `Мощный маршрут, очень аутентичные места, красивый каньен, высокогорное озеро, и пещерный город, но сложный для однодневного, сами ездили так много раз из Тбилиси, но это утомительно,
+         поэтому он сразу и в многодневных есть, потому что можно не возвращаться в Тбилис, а поехать дальше к побережью или с поборежья таким кругом проехать`,
+      image: 'https://v-georgia.com/wp-content/uploads/2015/06/vardzia4.jpg',
+
+      children: [
+        {
+          id: '21',
+          title: 'Каньен Дашбаши',
+          description: `Красивый каньен с стекляным мостом, но стоит много, поэтому можно просто взглянуть со стороны и ехать дальше`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/x7HzucvRf1V1ZvgF6'
+            }
+          ],
+          image:
+            'https://zectour.com/ru/image/loadimage?f=https://zectour.com/public/filemanager/1%20SEDANIT%20TUREBI/21%20DASHBASHI/2.jpg&w=480&h=400'
+        },
+        {
+          id: '22',
+          title: 'Вардзиа(пещерный город)',
+          description:
+            'Очень аутентичное место, главное не остановится и пройти в внутреннтих пещерах, вход возле церкви.',
+          image:
+            'https://img-fotki.yandex.ru/get/5310/41972460.a1/0_df31f_b2cafc59_orig.jpg',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/11WhYkLyyZxDsK1s6'
+            }
+          ]
+        },
+        {
+          id: '23',
+          title: 'Крепость Рабат(Турецко-Грузинская крепость)',
+          description: `Самая красивая крепость в Грузии. Большая часть бесплатная, но есть и платная зона`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/ajBhXq422jeD8qbb9'
+            }
+          ],
+          image:
+            'https://hoponhopoff-tbilisi.com/wp-content/uploads/2018/04/Hop-on-hop-off-tbilisi-Borjomi-Krepost-Rabat-00001.jpg'
+        },
+        {
+          id: '24',
+          title: 'Боржоми',
+          description: `В городе производят воду Боржоми, а так ничего особого, но есть теплые источники.`,
+          image:
+            'https://georgia.in-facts.info/wp-content/uploads/2019/01/Most-petlya-okolo-otelya---Crowne-Plaza-Borjomi---Borzhomi-Gruziya.jpg',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/2g292a3MkUimhBVa8'
+            }
+          ]
+        }
+      ]
+    },
+    {
+      id: '6',
+      title: 'Лугкий тур по видовым Монастырям',
+      navigationRoute:
+        'https://yandex.ru/navi?rtext=41.788341%2C44.739871~42.764270%2C43.508032~42.701582%2C43.674904~42.547145%2C42.870687~42.654805%2C42.773213~42.495279%2C42.551079&rtt=auto', //add from yandex map
+      description: `Легкий маршрут недалеко от Тбилиси. Красивые места и не нужно ходить. Рекомендую когда устали)`,
+      image:
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/13/d9/c9/javri.jpg?w=900&h=500&s=1',
+      additionalContent: [
+        {
+          title: 'Наш шортс из 1 и 2 точки',
+          isShorts: true,
+          link: 'https://youtube.com/embed/cuxCToFSLUc?si=bUIgDNdtvpL4qi5V'
+        }
+      ],
+
+      children: [
+        {
+          id: '61',
+          title: 'Джвари',
+          description: `Красивый монастырь времен Византии. Первая церковь была постояна в 545 году. Очень красивое видовое место, вид на слияние двух рек разного цвета. Очень рекомндую данную точку`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/BYzp8C1CtQ6DfFsU8'
+            }
+          ],
+          image: 'https://allgeotrip.ru/sites/default/files/dzhvari_1.jpg'
+        },
+        {
+          id: '62',
+          title: 'Мцхета(древняя столица)',
+          description:
+            'Друвняя столица, а сейчас очень приятное место для прогулки. Там же храм которому 1000лет',
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlNZ26NEgGWbvup5epHMicW0qHmtSDGq8Q&s',
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/ZDRNwzabmkGQ2MPFA'
+            }
+          ]
+        },
+        {
+          id: '63',
+          title: 'Шиомгвиме',
+          description: `Маленький монастырь, по пути к которому интересные пещаные горы и сам он расположен на склоне горы`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/TCLJKsuTiwHKzNPK6'
+            }
+          ],
+          image:
+            'https://cdnn1.img.sputnik-georgia.com/img/23902/48/239024808_0:215:2048:1367_1920x0_80_0_0_868b44be8b8e055be30630f997e5a615.jpg'
+        },
+        {
+          id: '64',
+          title: 'Уплесцихе',
+          description: `Очень древний пещерный город, которому примерно 3тысячи лет. Проигрывает Вардзии по зрелищности, но тоже довольно интересный. Вход 15-20лари `,
+          additionalContent: [
+            {
+              title: 'Шортс из Уплесцихе',
+              isShorts: true,
+              link: 'https://youtube.com/embed/HuzMJJ4LVMQ?si=rDuNxJrJms_R6t9q'
+            },
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/n3Y7aaZ4UGxxRmED9'
+            }
+          ],
+          image:
+            'https://gotrip.ge/blog/wp-content/uploads/2023/01/shutterstock_1452816938.jpeg'
+        },
+        {
+          id: '65',
+          title: 'Монумент Дидгорской Битвы',
+          description: `Совсем не обязательная точка, можно спокойно пропустить, но если хочется ехать по кругу, то это будет прикольный вид`,
+          additionalContent: [
+            {
+              title: 'Место на гугл картах',
+              link: 'https://maps.app.goo.gl/vmdXxUzHUHje76Mo9'
+            }
+          ],
+          image:
+            'https://wander-lush.org/wp-content/uploads/2021/07/Emily-Lush-Didgori-Battle-Memorial-Georgia-drone-hero.jpg'
         }
       ]
     }

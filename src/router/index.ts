@@ -26,7 +26,7 @@ export function setupRouter() {
     },
     {
       path: Enums.PageUrl.LongCarRoutes,
-      name: 'Root',
+      name: 'LongCarRoutes',
       component: () => import('../views/long-car-routes/long-car-routes.vue'),
       meta: {
         title: `Car Routes`
@@ -34,7 +34,7 @@ export function setupRouter() {
     },
     {
       path: Enums.PageUrl.DailyCarRotesFromTbilisi,
-      name: 'Root',
+      name: 'DailyFromTbilisi',
       component: () =>
         import(
           '../views/daily-car-routes-from-tbilisi/daily-car-routes-from-tbilisi.vue'
