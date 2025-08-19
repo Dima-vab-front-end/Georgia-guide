@@ -11,7 +11,14 @@
       v-for="(additionalContent, acIndex) of root.props.route.additionalContent"
       :key="'d-' + acIndex">
       <h5>{{ additionalContent.title }}</h5>
+      <a
+        v-if="additionalContent.link"
+        target="_blank"
+        :href="additionalContent.link">
+        Открыть ссылку
+      </a>
       <iframe
+        v-if="additionalContent.youtubeLink"
         class="video"
         :class="{ shorts: additionalContent.isShorts }"
         :src="additionalContent.youtubeLink"

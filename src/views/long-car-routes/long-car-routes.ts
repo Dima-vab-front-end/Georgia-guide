@@ -7,7 +7,7 @@ export default function () {
       id: '1',
       title: 'Через Рачу',
       navigationRoute:
-        'https://yandex.ru/navi?rtext=41.788341%2C44.739871~42.764270%2C43.508032~42.701582%2C43.674904~42.547145%2C42.870687~42.654805%2C42.773213~42.495279%2C42.551079&rtt=auto', //add from yandex map
+        'https://yandex.ru/navi?rtext=41.789710%2C44.739876~42.764270%2C43.508032~42.547145%2C42.870687~42.646777%2C42.768117~42.489630%2C42.624133~42.495279%2C42.551079~42.528224%2C42.551731~42.457174%2C42.377062&rtt=auto', //add from yandex map
       description:
         'Топ маршрут, несложно проехать но попадешь в самые красивые места Грузии',
       additionalContent: [
@@ -147,7 +147,7 @@ export default function () {
       id: '2',
       title: 'Через Вардзию',
       navigationRoute:
-        'https://yandex.ru/navi?rtext=41.788341%2C44.739871~42.764270%2C43.508032~42.701582%2C43.674904~42.547145%2C42.870687~42.654805%2C42.773213~42.495279%2C42.551079&rtt=auto', //add from yandex map
+        'https://yandex.ru/navi?rtext=41.788555%2C44.739831~41.593811%2C44.124545~41.381076%2C43.284224~41.642592%2C42.976353~41.843148%2C43.384046&rtt=auto', //add from yandex map
       description:
         'Классный маршрут, через пещерный город исамую красивую крепость Грузии',
       image: 'https://v-georgia.com/wp-content/uploads/2015/06/vardzia4.jpg',
