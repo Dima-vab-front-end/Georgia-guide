@@ -1,7 +1,8 @@
 export enum PageUrl {
   HomePage = '/',
 
-  CarRoutes = '/car-routes',
+  LongCarRoutes = '/long-car-routes',
+  DailyCarRotesFromTbilisi = '/daily-car-routes-from-tbilisi',
 
   Page404 = '/:catchAll(.*)'
 }

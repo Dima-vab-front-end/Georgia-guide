@@ -31,14 +31,16 @@
                 <li>
                   <router-link
                     class="dropdown-item"
-                    :to="Enums.PageUrl.CarRoutes">
+                    :to="Enums.PageUrl.LongCarRoutes">
                     Длинные маршруты
                   </router-link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#"
-                    >Маршруты из Тбилиси на 1 день</a
-                  >
+                  <router-link
+                    class="dropdown-item"
+                    :to="Enums.PageUrl.DailyCarRotesFromTbilisi">
+                    Маршруты из Тбилиси на 1 день
+                  </router-link>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Марштуры в Тбилиси</a>
