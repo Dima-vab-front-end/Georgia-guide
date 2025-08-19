@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgeorgia_guide=self.webpackChunkgeorgia_guide||[]).push([[501],{1241:(e,r)=>{r.A=(e,r)=>{const s=e.__vccOpts||e;for(const[e,t]of r)s[e]=t;return s}},2501:(e,r,s)=>{s.r(r),s.d(r,{default:()=>n});var t=s(6768);const u={class:"test"},c={},n=(0,s(1241).A)(c,[["render",function(e,r){return(0,t.uX)(),(0,t.CE)("h1",u,"Home page")}]])}}]);
+//# sourceMappingURL=501.59e2e332.js.map

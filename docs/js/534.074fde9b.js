@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgeorgia_guide=self.webpackChunkgeorgia_guide||[]).push([[534],{8534:(e,t,o)=>{o.r(t),o.d(t,{default:()=>s});var u=o(6768),r=o(4232),n=o(144);const s=(0,u.pM)({__name:"footer",setup(e){const t=(0,n.Kh)({});return(e,o)=>((0,u.uX)(),(0,u.CE)("footer",null,"Footer content "+(0,r.v_)((0,n.R1)(t)),1))}})}}]);
+//# sourceMappingURL=534.074fde9b.js.map

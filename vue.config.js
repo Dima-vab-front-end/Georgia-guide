@@ -5,6 +5,8 @@ const webpack = require('webpack');
 module.exports = defineConfig({
   transpileDependencies: true,
   runtimeCompiler: false,
+  outputDir: 'docs',
+  publicPath: '/Georgia-guide/',
   productionSourceMap: true,
   configureWebpack: config => {
     config.plugins = [
