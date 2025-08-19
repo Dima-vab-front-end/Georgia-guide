@@ -1,6 +1,6 @@
 <template>
   <app-header></app-header>
-  <main class="container">
+  <main class="container main-container">
     <router-view />
   </main>
   <app-footer></app-footer>

@@ -1,5 +1,9 @@
-import { reactive } from 'vue';
+import { computed, reactive } from 'vue';
 
 export default function () {
-  return reactive({});
+  const currentYear = computed(() => new Date().getFullYear());
+
+  return reactive({
+    currentYear
+  });
 }
