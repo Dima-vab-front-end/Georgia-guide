@@ -5,7 +5,8 @@ const webpack = require('webpack');
 module.exports = defineConfig({
   transpileDependencies: true,
   runtimeCompiler: false,
-  outputDir: 'docs',
+  // ⬇️ switch from 'docs' to 'dist' (or remove this line entirely)
+  outputDir: 'dist',
   publicPath: '/Georgia-guide/',
   productionSourceMap: true,
   configureWebpack: config => {
@@ -17,37 +18,31 @@ module.exports = defineConfig({
         __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: JSON.stringify(false)
       })
     ];
-
     config.optimization = {
       runtimeChunk: true,
       minimize: true,
       splitChunks: {
-        chunks: 'all', // Split chunks for all types of imports (async and sync)
-        minSize: 20000, // Minimum chunk size in bytes
-        maxSize: 250000, // Maximum chunk size in bytes
-        minChunks: 1, // Minimum number of chunks that must share a module before splitting
-        maxAsyncRequests: 30, // Maximum number of parallel requests for async chunks
-        maxInitialRequests: 30, // Maximum number of parallel requests for initial chunks
-        automaticNameDelimiter: '-', // Delimiter for chunk names
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 250000,
+        minChunks: 1,
+        maxAsyncRequests: 30,
+        maxInitialRequests: 30,
+        automaticNameDelimiter: '-',
         cacheGroups: {
-          default: {
-            minChunks: 2,
-            priority: -20,
-            reuseExistingChunk: true
-          },
+          default: { minChunks: 2, priority: -20, reuseExistingChunk: true },
           vendors: {
-            test: /[\\/]node_modules[\\/]/, // Include third-party libraries
+            test: /[\\/]node_modules[\\/]/,
             priority: -10,
             reuseExistingChunk: true
           }
         }
       }
     };
-
     config.performance = {
-      hints: false, // enum
-      maxAssetSize: 512000, // int (in bytes),
-      maxEntrypointSize: 512000 // int (in bytes)
+      hints: false,
+      maxAssetSize: 512000,
+      maxEntrypointSize: 512000
     };
 
     return {
@@ -60,9 +55,7 @@ module.exports = defineConfig({
               {
                 loader: 'sass-loader',
                 options: {
-                  additionalData: `
-                  @import './src/styles/variables.scss';
-                  `
+                  additionalData: `@import './src/styles/variables.scss';`
                 }
               }
             ]
