@@ -1,10 +1,11 @@
 import { Interfaces } from '@shared';
-import { reactive } from 'vue';
+import { v4 as generateUID } from 'uuid';
+import { computed, reactive } from 'vue';
 
 export default function () {
-  const listOfRoutes: Interfaces.IArticle[] = [
+  const listOfRoutes = computed((): Interfaces.IArticle[] => [
     {
-      id: '1',
+      id: generateUID(),
       title: 'Поездка к Гергети',
       navigationRoute:
         'https://yandex.ru/navi?rtext=41.788338%2C44.739922~42.163823%2C44.703141~42.470237%2C44.493310~42.492281%2C44.452997~42.531771%2C44.472459~42.662910%2C44.620465&rtt=auto',
@@ -22,7 +23,7 @@ export default function () {
 
       children: [
         {
-          id: '11',
+          id: generateUID(),
           title: 'Ананури',
           description: `Приятная крепость прям по пути, хорошая точка чтобы остановится, отдохнуть и посмотретть на водохранилище`,
           additionalContent: [
@@ -35,13 +36,12 @@ export default function () {
             'https://gamarjoba-ru.storage.yandexcloud.net/page/image/6c87fb03-4d91-4e8c-8f1f-be4c446f0acb.JPG'
         },
         {
-          id: '12',
+          id: generateUID(),
           title:
             'Гудаури - летняя и зимняя канатная дорога (пропустите если мало времени)',
           description:
             'Если есть время и нет облаков, то там можно подняться на высоту 3300 и посмотреть красивые виды на заснеженные горы. Поездка стоит около 35лари и занимает пару часов. Есть много точек где можно выйти и погулять',
-          image:
-            'https://toursgeorgia.ge/wp-content/uploads/2017/09/resort-gudauri-in-summer-or-where-to-find-the-cool-climate-and-picturesque-mountains-in-georgia-3-1.jpg',
+          image: './gudauri.jpg',
           additionalContent: [
             {
               youtubeLink:
@@ -55,7 +55,7 @@ export default function () {
           ]
         },
         {
-          id: '13',
+          id: generateUID(),
           title: 'Арка дружбы народов',
           description: `Потрясающие виды во все стороны и всего 20-50 метров с дороги`,
           additionalContent: [
@@ -68,7 +68,7 @@ export default function () {
             'https://cdn.georgia.to/img/thumbnails/XsePpmT6iNWTqUTKR2T69E_smedium.jpg'
         },
         {
-          id: '14',
+          id: generateUID(),
           title: 'Минеральный источник',
           description: `Место не является прям особым, но оно по пути и там можно попить минералки`,
           image:
@@ -81,7 +81,7 @@ export default function () {
           ]
         },
         {
-          id: '15',
+          id: generateUID(),
           title: 'Троицкая церковь',
           description: `Церковь на высотке 2170метров с одними из лучших видов в Грузии, прекрасно виден Казбек и подходит для классных фоток, с дороги нужно съехать и подняться по серпантину. Зимой может быт опасно`,
           additionalContent: [
@@ -96,15 +96,14 @@ export default function () {
       ]
     },
     {
-      id: '2',
+      id: generateUID(),
       title: 'Водопад Ниносхеви(хайкинг к очень красивому водопаду)',
       navigationRoute:
         'https://yandex.ru/navi?rtext=41.790298%2C44.739419~41.872379%2C46.239666&rtt=auto',
       description: `Средней сложности однодневный хайк, зайти в 2 стороны можно за 4-5 часов, прогулка по очень красивому лесу, местами вдоль горной реки.
          Даже внизу, если никуда не идти, это очень красивое место.Можно поехать многодневным маршрутом №3.
          Рекомендую выезжать из Тбилиси до 10 утра, чтобы спокойно приехать, пройтись и уехать.`,
-      image:
-        'https://www.advantour.com/img/georgia/tours/ninoskhevi-waterfall-tour/lagodekhi-national-park9.jpg',
+      image: './lagodekhi.jpg',
       additionalContent: [
         {
           isShorts: true,
@@ -119,13 +118,13 @@ export default function () {
       ]
     },
     {
-      id: '3',
+      id: generateUID(),
       title: 'Озера Абуделаури(плохая дорога!)',
       navigationRoute:
         'https://yandex.ru/navi?rtext=41.787756%2C44.739665~42.558339%2C44.868210&rtt=auto',
       description: `Очень легкий хайк, стартовать нужно за деревней Рошка, поход к Зеленому и Голубому озеру очень легкий, а к Белому посложнее будет. Плохая и опасная грунтовка последние 4-5км.
       Если жалко авто, то лучше взять тур на воскресенье и с группой пройтись`,
-      image: '/abudelauri.jpg',
+      image: './abudelauri.jpg',
       additionalContent: [
         {
           isShorts: true,
@@ -141,7 +140,7 @@ export default function () {
     },
 
     {
-      id: '4',
+      id: generateUID(),
       title: 'Кахетия',
       navigationRoute:
         'https://yandex.ru/navi?rtext=41.787813%2C44.739619~41.447384%2C45.376767~41.619117%2C45.922677&rtt=auto',
@@ -154,10 +153,10 @@ export default function () {
           title: 'Наш шортс из первой точки на маршруте'
         }
       ],
-      image: '/lavra.jpg',
+      image: './lavra-davida-2.jpg',
       children: [
         {
-          id: '41',
+          id: generateUID(),
           title: 'Лавра Давида Гареджийского',
           description: `Приятное тихое место, часть крепости высечена в скале и прекрасные пезажи на разноцветные холмы.`,
           additionalContent: [
@@ -166,10 +165,10 @@ export default function () {
               link: 'https://maps.app.goo.gl/Scec942JK5t7Bc236'
             }
           ],
-          image: '/lavra.jpg' // TODO add image
+          image: './lavra.jpg'
         },
         {
-          id: '42',
+          id: generateUID(),
           title: 'Сигнахи(город с красивыми видами)',
           description: `Приятный городок, если повезет то будет классный вид на Кавказский хребет. Классное место чтобы зайти в кафе и запилить красивый видос или фотки)`,
           image:
@@ -185,17 +184,17 @@ export default function () {
     },
 
     {
-      id: '5',
-      title: 'Вардзия-Рабат',
+      id: generateUID(),
+      title: 'Через Вардзию',
       navigationRoute:
         'https://yandex.ru/navi?rtext=41.788555%2C44.739831~41.593811%2C44.124545~41.381076%2C43.284224~41.642592%2C42.976353~41.843148%2C43.384046&rtt=auto', //add from yandex map
-      description: `Мощный маршрут, очень аутентичные места, красивый каньен, высокогорное озеро, и пещерный город, но сложный для однодневного, сами ездили так много раз из Тбилиси, но это утомительно,
-         поэтому он сразу и в многодневных есть, потому что можно не возвращаться в Тбилис, а поехать дальше к побережью или с поборежья таким кругом проехать`,
-      image: 'https://v-georgia.com/wp-content/uploads/2015/06/vardzia4.jpg',
+      description:
+        'Классный маршрут, через пещерный город исамую красивую крепость Грузии',
+      image: './rabat.jpg',
 
       children: [
         {
-          id: '21',
+          id: generateUID(),
           title: 'Каньен Дашбаши',
           description: `Красивый каньен с стекляным мостом, но стоит много, поэтому можно просто взглянуть со стороны и ехать дальше`,
           additionalContent: [
@@ -208,12 +207,11 @@ export default function () {
             'https://zectour.com/ru/image/loadimage?f=https://zectour.com/public/filemanager/1%20SEDANIT%20TUREBI/21%20DASHBASHI/2.jpg&w=480&h=400'
         },
         {
-          id: '22',
+          id: generateUID(),
           title: 'Вардзиа(пещерный город)',
           description:
             'Очень аутентичное место, главное не остановится и пройти в внутреннтих пещерах, вход возле церкви.',
-          image:
-            'https://img-fotki.yandex.ru/get/5310/41972460.a1/0_df31f_b2cafc59_orig.jpg',
+          image: './vardzia.jpg',
           additionalContent: [
             {
               title: 'Место на гугл картах',
@@ -222,7 +220,7 @@ export default function () {
           ]
         },
         {
-          id: '23',
+          id: generateUID(),
           title: 'Крепость Рабат(Турецко-Грузинская крепость)',
           description: `Самая красивая крепость в Грузии. Большая часть бесплатная, но есть и платная зона`,
           additionalContent: [
@@ -231,11 +229,10 @@ export default function () {
               link: 'https://maps.app.goo.gl/ajBhXq422jeD8qbb9'
             }
           ],
-          image:
-            'https://hoponhopoff-tbilisi.com/wp-content/uploads/2018/04/Hop-on-hop-off-tbilisi-Borjomi-Krepost-Rabat-00001.jpg'
+          image: './rabat.jpg'
         },
         {
-          id: '24',
+          id: generateUID(),
           title: 'Боржоми',
           description: `В городе производят воду Боржоми, а так ничего особого, но есть теплые источники.`,
           image:
@@ -250,7 +247,7 @@ export default function () {
       ]
     },
     {
-      id: '6',
+      id: generateUID(),
       title: 'Лугкий тур по видовым Монастырям',
       navigationRoute:
         'https://yandex.ru/navi?rtext=41.787813%2C44.739619~41.838555%2C44.733432~41.842888%2C44.723389~41.862397%2C44.640383~41.966803%2C44.208779~41.760859%2C44.507898&rtt=auto',
@@ -268,7 +265,7 @@ export default function () {
 
       children: [
         {
-          id: '61',
+          id: generateUID(),
           title: 'Джвари',
           description: `Красивый монастырь времен Византии. Первая церковь была постояна в 545 году. Очень красивое видовое место, вид на слияние двух рек разного цвета. Очень рекомндую данную точку`,
           additionalContent: [
@@ -280,7 +277,7 @@ export default function () {
           image: 'https://allgeotrip.ru/sites/default/files/dzhvari_1.jpg'
         },
         {
-          id: '62',
+          id: generateUID(),
           title: 'Мцхета(древняя столица)',
           description:
             'Друвняя столица, а сейчас очень приятное место для прогулки. Там же храм которому 1000лет',
@@ -294,7 +291,7 @@ export default function () {
           ]
         },
         {
-          id: '63',
+          id: generateUID(),
           title: 'Шиомгвиме',
           description: `Маленький монастырь, по пути к которому интересные пещаные горы и сам он расположен на склоне горы`,
           additionalContent: [
@@ -307,7 +304,7 @@ export default function () {
             'https://cdnn1.img.sputnik-georgia.com/img/23902/48/239024808_0:215:2048:1367_1920x0_80_0_0_868b44be8b8e055be30630f997e5a615.jpg'
         },
         {
-          id: '64',
+          id: generateUID(),
           title: 'Уплесцихе',
           description: `Очень древний пещерный город, которому примерно 3тысячи лет. Проигрывает Вардзии по зрелищности, но тоже довольно интересный. Вход 15-20лари `,
           additionalContent: [
@@ -325,7 +322,7 @@ export default function () {
             'https://gotrip.ge/blog/wp-content/uploads/2023/01/shutterstock_1452816938.jpeg'
         },
         {
-          id: '65',
+          id: generateUID(),
           title: 'Монумент Дидгорской Битвы',
           description: `Совсем не обязательная точка, можно спокойно пропустить, но если хочется ехать по кругу, то это будет прикольный вид`,
           additionalContent: [
@@ -334,12 +331,11 @@ export default function () {
               link: 'https://maps.app.goo.gl/vmdXxUzHUHje76Mo9'
             }
           ],
-          image:
-            'https://wander-lush.org/wp-content/uploads/2021/07/Emily-Lush-Didgori-Battle-Memorial-Georgia-drone-hero.jpg'
+          image: './didgory-battle.jpg'
         }
       ]
     }
-  ];
+  ]);
 
   return reactive({ listOfRoutes });
 }

@@ -17,8 +17,7 @@ export default function () {
           title: 'Наше видео c похода примерно с 1 точки.'
         }
       ],
-      image:
-        'https://cdn.georgia.to/img/thumbnails/NUDAeEkAmXGQBekVVESBQn_smedium.jpg',
+      image: './racha.jpg',
 
       children: [
         {
@@ -39,16 +38,14 @@ export default function () {
               link: 'https://maps.app.goo.gl/s2PesoU8WDLMwa2EA'
             }
           ],
-          image:
-            'https://lh3.googleusercontent.com/proxy/9X7EpiOs9uGZbiW62xFfbPX0fSekEC8ZcxYh_pJOKIkRZ8WJp4yzbIieHmbNct3Dq1mER-OtOLZKFEzqx6eG_7AwsqaMWj9U'
+          image: './racha-2.jpg'
         },
         {
           id: '12',
           title: 'Саирме (прикольные столбы)',
           description:
             'Прикольное место по дороге, можно сильно долго время не тратить и не гулять, не моуг разместить в личный топ, но если такое привлекает, то почему нет',
-          image:
-            'https://madloba.info/media/images/Kolonny-Sairme.max-1200x1200.format-webp.webp',
+          image: './sairme.jpg',
           additionalContent: [
             {
               title: 'Место на гугл картах',
@@ -67,8 +64,7 @@ export default function () {
               link: 'https://maps.app.goo.gl/C4wXFkKUZqpwuSFV6'
             }
           ],
-          image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Lajanura_Gorge_%28G.N._2009%29.jpg/1200px-Lajanura_Gorge_%28G.N._2009%29.jpg'
+          image: './tsageri.jpg'
         },
         {
           id: '14',
@@ -99,15 +95,13 @@ export default function () {
               link: 'https://maps.app.goo.gl/7PvWxJT842jaV7jp8'
             }
           ],
-          image:
-            'https://gruziyagid.ru/wp-content/uploads/2024/01/chem-znamenit-vodopad-kinchha-1.jpg'
+          image: './okatse.jpg'
         },
         {
           id: '16',
           title: 'Кинчха Каньен',
           description: `Там же рядом очень красивый каньен Кинчха по которому можно бесплатно погулять и в нем поплавать`,
-          image:
-            'https://bptrip.ru/wp-content/uploads/2017/05/vodopady-kutaisi-gruzia.jpg',
+          image: 'kinchha.jpg',
           additionalContent: [
             {
               title: 'Место на гугл картах',
@@ -119,7 +113,7 @@ export default function () {
           id: '17',
           title: 'Ломина Водопад',
           description: `Приятный водопад рядом с предыдущей точкой(5км). Из интересного что под ним можно походить, высота его метров 8 примерно`,
-          image: 'https://storage.georgia.travel/images/lomina-gnta.webp',
+          image: './lomina.jpg',
           additionalContent: [
             {
               title: 'Место на гугл картах',
@@ -138,8 +132,7 @@ export default function () {
               link: 'https://maps.app.goo.gl/yt6TWaXswtyJKvFv8'
             }
           ],
-          image:
-            'https://gotrip.ge/blog/wp-content/uploads/2022/12/shutterstock_1434243356.jpeg'
+          image: './martvili.jpg'
         }
       ]
     },
@@ -150,7 +143,7 @@ export default function () {
         'https://yandex.ru/navi?rtext=41.788555%2C44.739831~41.593811%2C44.124545~41.381076%2C43.284224~41.642592%2C42.976353~41.843148%2C43.384046&rtt=auto', //add from yandex map
       description:
         'Классный маршрут, через пещерный город исамую красивую крепость Грузии',
-      image: 'https://v-georgia.com/wp-content/uploads/2015/06/vardzia4.jpg',
+      image: './rabat.jpg',
 
       children: [
         {
@@ -171,8 +164,7 @@ export default function () {
           title: 'Вардзиа(пещерный город)',
           description:
             'Очень аутентичное место, главное не остановится и пройти в внутреннтих пещерах, вход возле церкви.',
-          image:
-            'https://img-fotki.yandex.ru/get/5310/41972460.a1/0_df31f_b2cafc59_orig.jpg',
+          image: './vardzia.jpg',
           additionalContent: [
             {
               title: 'Место на гугл картах',
@@ -190,8 +182,7 @@ export default function () {
               link: 'https://maps.app.goo.gl/ajBhXq422jeD8qbb9'
             }
           ],
-          image:
-            'https://hoponhopoff-tbilisi.com/wp-content/uploads/2018/04/Hop-on-hop-off-tbilisi-Borjomi-Krepost-Rabat-00001.jpg'
+          image: './rabat.jpg'
         },
         {
           id: '24',

@@ -18,8 +18,7 @@ export default function () {
           title: 'Шортс из старого города'
         }
       ],
-      image:
-        'https://cdn.georgiantravelguide.com/storage/files/narikala-fortress-nariqalas-tsikhesimagre-krepost-narikala-tbilisi-georgia.jpg',
+      image: './tbilisi.jpg',
       children: [
         {
           id: generateUID(),
@@ -41,8 +40,7 @@ export default function () {
           title: 'Земо Бетлеми',
           description:
             'Небольшая церквушка с красивыми видами на город. Если есть желание, то можно подняться выше к скульптупе мать Грузия, но сейчас проход с нее на крепость Нарикала закрыт, поэтмоу не веду тудой',
-          image:
-            'https://madloba.info/media/images/betlemi-street.2e16d0ba.fill-1366x768.format-webp.mwtmk.webp',
+          image: './zemo-betlemi2.jpg',
           additionalContent: [
             {
               title: 'Шортс с местами из 1 и 2 точки',
@@ -73,8 +71,7 @@ export default function () {
                 'https://youtube.com/embed/0WlReDTRWfM?si=ILyvx9d4l9pjSHfw'
             }
           ],
-          image:
-            'https://i0.wp.com/tipstrips.ru/wp-content/uploads/2019/03/%D0%9F%D0%B5%D1%81%D1%82%D1%80%D0%B0%D1%8F-%D0%9E%D1%80%D0%B1%D0%B5%D0%BB%D0%B8%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%B0%D0%BD%D1%8F-1-min.jpg?resize=870%2C580&ssl=1'
+          image: './botanic-steet.jpg'
         },
         {
           id: generateUID(),
@@ -99,8 +96,7 @@ export default function () {
           description:
             'Красивый храм, так еще и построен первый храм был в 5 веке, а дальше многократно востанавливался после нападений',
 
-          image:
-            'https://img.pac.ru/landmarks/409440/big/AB991FE37F0001014F4B75E4DF45D3C1.jpg'
+          image: './metehi.jpg'
         },
         {
           id: generateUID(),
