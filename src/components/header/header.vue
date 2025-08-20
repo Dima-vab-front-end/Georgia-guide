@@ -50,7 +50,9 @@
                   </router-link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Маршруты из Батуми</a>
+                  <router-link class="dropdown-item" :to="Enums.PageUrl.Batumi">
+                    Места около Батуми и на побережье
+                  </router-link>
                 </li>
               </ul>
             </li>
@@ -66,10 +68,18 @@
                 Еда
               </a>
               <ul class="dropdown-menu" aria-labelledby="logOutDropdown">
-                <li><a class="dropdown-item" href="#">Магазины</a></li>
-                <li><a class="dropdown-item" href="#">Рынки</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Ресораны</a>
+                  <router-link class="dropdown-item" :to="Enums.PageUrl.Shops">
+                    Магазины
+                  </router-link>
+                </li>
+                <li>
+                  <router-link class="dropdown-item" :to="Enums.PageUrl.Dishes">
+                    Блюда и продукты
+                  </router-link>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Рестораны, Кафе и т.д.</a>
                 </li>
               </ul>
             </li>

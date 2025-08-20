@@ -41,6 +41,22 @@ export function setupRouter() {
       }
     },
     {
+      path: Enums.PageUrl.Batumi,
+      name: 'Batumi',
+      component: () => import('../views/batumi/batumi.vue'),
+      meta: {
+        title: `Batumi`
+      }
+    },
+    {
+      path: Enums.PageUrl.Shops,
+      name: 'Shops',
+      component: () => import('../views/shops/shops.vue'),
+      meta: {
+        title: `Shops`
+      }
+    },
+    {
       path: Enums.PageUrl.DailyCarRotesFromTbilisi,
       name: 'DailyFromTbilisi',
       component: () =>
@@ -49,6 +65,14 @@ export function setupRouter() {
         ),
       meta: {
         title: `Car Routes`
+      }
+    },
+    {
+      path: Enums.PageUrl.Dishes,
+      name: 'Dishes',
+      component: () => import('../views/dishes/dishes.vue'),
+      meta: {
+        title: `Dishes`
       }
     }
     // {

@@ -1,6 +1,9 @@
 <template>
   <h4 class="mt-2">
-    <a target="_blank" :href="root.props.route.navigationRoute">
+    <a
+      v-if="root.props.route.navigationRoute"
+      target="_blank"
+      :href="root.props.route.navigationRoute">
       Открыть маршрут в новигаторе
     </a>
   </h4>
