@@ -16,7 +16,7 @@
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"> </span>
         </button>
-        <h4 class="me-auto ms-2">Menu</h4>
+        <h4 class="me-auto ms-2 d-block d-md-none">Меню</h4>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
