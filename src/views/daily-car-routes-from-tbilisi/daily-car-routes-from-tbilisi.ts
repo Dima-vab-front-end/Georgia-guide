@@ -311,7 +311,8 @@ export default function () {
             {
               title: 'Шортс из Уплесцихе',
               isShorts: true,
-              link: 'https://youtube.com/embed/HuzMJJ4LVMQ?si=rDuNxJrJms_R6t9q'
+              youtubeLink:
+                'https://youtube.com/embed/HuzMJJ4LVMQ?si=rDuNxJrJms_R6t9q'
             },
             {
               title: 'Место на гугл картах',
