@@ -33,6 +33,14 @@ export function setupRouter() {
       }
     },
     {
+      path: Enums.PageUrl.Tbilisi,
+      name: 'Tbilisi',
+      component: () => import('../views/tbilisi/tbilisi.vue'),
+      meta: {
+        title: `Tbilisi`
+      }
+    },
+    {
       path: Enums.PageUrl.DailyCarRotesFromTbilisi,
       name: 'DailyFromTbilisi',
       component: () =>

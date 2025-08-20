@@ -25,7 +25,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Авто маршрyты
+                Маршрyты
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -43,7 +43,11 @@
                   </router-link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Марштуры в Тбилиси</a>
+                  <router-link
+                    class="dropdown-item"
+                    :to="Enums.PageUrl.Tbilisi">
+                    Марштуры в Тбилиси
+                  </router-link>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Маршруты из Батуми</a>
