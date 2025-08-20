@@ -14,8 +14,9 @@
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"> </span>
         </button>
+        <h4 class="me-auto ms-2">Menu</h4>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
@@ -79,12 +80,22 @@
                   </router-link>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">Рестораны, Кафе и т.д.</a>
+                  <router-link
+                    class="dropdown-item"
+                    :to="Enums.PageUrl.Restaurant">
+                    Пару мест поесть
+                  </router-link>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Общественный транспорт</a>
+              <a class="nav-link">
+                <router-link
+                  class="dropdown-item"
+                  :to="Enums.PageUrl.PublicTransport">
+                  Общественный транспорт Тбилиси
+                </router-link>
+              </a>
             </li>
           </ul>
         </div>

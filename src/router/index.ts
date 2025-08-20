@@ -57,6 +57,22 @@ export function setupRouter() {
       }
     },
     {
+      path: Enums.PageUrl.Restaurant,
+      name: 'Restaurant',
+      component: () => import('../views/restaurant/restaurant.vue'),
+      meta: {
+        title: `Restaurant`
+      }
+    },
+    {
+      path: Enums.PageUrl.PublicTransport,
+      name: 'PublicTransport',
+      component: () => import('../views/public-transport/public-transport.vue'),
+      meta: {
+        title: `PublicTransport`
+      }
+    },
+    {
       path: Enums.PageUrl.DailyCarRotesFromTbilisi,
       name: 'DailyFromTbilisi',
       component: () =>
