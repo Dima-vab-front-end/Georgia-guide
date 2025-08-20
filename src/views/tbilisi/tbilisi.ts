@@ -7,207 +7,217 @@ export default function () {
     {
       id: generateUID(),
       title: 'Старый Город',
-      navigationRoute:
-        'https://yandex.ru/navi?rtext=41.789710%2C44.739876~42.764270%2C43.508032~42.547145%2C42.870687~42.646777%2C42.768117~42.489630%2C42.624133~42.495279%2C42.551079~42.528224%2C42.551731~42.457174%2C42.377062&rtt=auto', //add from yandex map
+      navigationRoute: `https://yandex.com.ge/maps/10277/tbilisi/?ll=44.811049%2C41.692395&mode=routes&rtext=41.698057%2C44.797734~41.690948%2C44.803656~41.689152%2C44.804477~41.687208%2C44.811009~41.687256%2C44.809966~41.689677%2C44.809174~41.690416%2C44.810574~41.690085%2C44.810965~41.691674%2C44.812707~41.693003%2C44.811594~41.693159%2C44.810671~41.696660%2C44.806545~41.696971%2C44.803326~41.699368%2C44.801283~41.698146%2C44.797811&rtt=pd&ruri=~~~~~ymapsbm1%3A%2F%2Forg%3Foid%3D132798286680~ymapsbm1%3A%2F%2Forg%3Foid%3D83445082282~~ymapsbm1%3A%2F%2Forg%3Foid%3D192293236308~~~~~~&z=17.88`,
       description:
-        'Топ маршрут, несложно проехать но попадешь в самые красивые места Грузии',
+        'Подорбрал хороший маршрут, но вообще в той местности можно идти в любую сторону, но я подобрал вроде неплохие точки',
       additionalContent: [
         {
+          isShorts: true,
           youtubeLink:
-            'https://www.youtube.com/embed/TRfE5nWH_TI?si=thK4f3PTrSDs194R',
-          title: 'Наше видео c похода примерно с 1 точки.'
+            'https://youtube.com/embed/0WlReDTRWfM?si=GsxwB7g5QYSyyAJC',
+          title: 'Шортс из старого города'
         }
       ],
       image:
         'https://cdn.georgiantravelguide.com/storage/files/narikala-fortress-nariqalas-tsikhesimagre-krepost-narikala-tbilisi-georgia.jpg',
-
       children: [
         {
-          id: '11',
-          title: 'Рача около деревень Геби и Шови',
-          description: `Очень красивые виды из деревь Гоби и Шови. Рекомендую остановится на ночевку в деревне Гоби или Глола.
-           Рекомендую заехать до Шови и До Геби(классные виды на ледники, да и там рядом) и там переночевать(очень простые условия деревни)
-           или же в "Они"(побольше населенный пункт)`,
-          additionalContent: [
-            {
-              youtubeLink:
-                'https://www.youtube.com/embed/TRfE5nWH_TI?si=thK4f3PTrSDs194R',
-              title:
-                'Наше видео c похода в той местности к самому красивому озеру в Грузии'
-            },
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/s2PesoU8WDLMwa2EA'
-            }
-          ],
+          id: generateUID(),
+          title: 'Площадь Гудиашвили',
+          description: 'Небольшая красивая площадь с отреставрироваными домами',
           image:
-            'https://lh3.googleusercontent.com/proxy/9X7EpiOs9uGZbiW62xFfbPX0fSekEC8ZcxYh_pJOKIkRZ8WJp4yzbIieHmbNct3Dq1mER-OtOLZKFEzqx6eG_7AwsqaMWj9U'
-        },
-        {
-          id: '12',
-          title: 'Саирме (прикольные столбы)',
-          description:
-            'Прикольное место по дороге, можно сильно долго время не тратить и не гулять, не моуг разместить в личный топ, но если такое привлекает, то почему нет',
-          image:
-            'https://madloba.info/media/images/Kolonny-Sairme.max-1200x1200.format-webp.webp',
+            'https://steelhouse.ge/wp-content/uploads/2022/06/249019424-3764965793606829-8276643773246577462-n-80851-1635322371-1.jpg',
           additionalContent: [
             {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/mm3UUVFyuU1XL3Dx9'
-            }
-          ]
-        },
-        {
-          id: '13',
-          title: 'Цагери (очень красивое ущелье по дороге)',
-          description: `по дороге очень красивое ущелье в котором нужно ехать, 
-          а в самой деревне ничего нет, просто маршрут красивый`,
-          additionalContent: [
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/C4wXFkKUZqpwuSFV6'
-            }
-          ],
-          image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Lajanura_Gorge_%28G.N._2009%29.jpg/1200px-Lajanura_Gorge_%28G.N._2009%29.jpg'
-        },
-        {
-          id: '14',
-          title: 'Ophitara Three Cascade Waterfall',
-          description: `Приятная точка остановится и немного отдохнуть`,
-          image:
-            'https://www.reinisfischer.com/sites/default/files/inline-images/DJI_0386-HDR.jpg',
-          additionalContent: [
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/Fg3uJBgDa8CWdBuN8'
-            }
-          ]
-        },
-        {
-          id: '15',
-          title: 'Окаце Водопад(кинчха)',
-          description: `Очень высокий водопад(общаяя высота 3 ступеней - 120метров)`,
-          additionalContent: [
-            {
+              title: 'Шортс с местами из 1 и 2 точки',
               isShorts: true,
               youtubeLink:
-                'https://youtube.com/embed/Hx6p9_Rl5Io?si=6KOVkbWmES0Dmb-P',
-              title: 'Наш шортс из этого места'
-            },
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/7PvWxJT842jaV7jp8'
-            }
-          ],
-          image:
-            'https://gruziyagid.ru/wp-content/uploads/2024/01/chem-znamenit-vodopad-kinchha-1.jpg'
-        },
-        {
-          id: '16',
-          title: 'Кинчха Каньен',
-          description: `Там же рядом очень красивый каньен Кинчха по которому можно бесплатно погулять и в нем поплавать`,
-          image:
-            'https://bptrip.ru/wp-content/uploads/2017/05/vodopady-kutaisi-gruzia.jpg',
-          additionalContent: [
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/qoDzmgUAJ6dzwFmn7'
+                'https://youtube.com/embed/P2GCg3PMX7Q?si=oWdGGlEDRKVAbLgL'
             }
           ]
         },
         {
-          id: '17',
-          title: 'Ломина Водопад',
-          description: `Приятный водопад рядом с предыдущей точкой(5км). Из интересного что под ним можно походить, высота его метров 8 примерно`,
-          image: 'https://storage.georgia.travel/images/lomina-gnta.webp',
+          id: generateUID(),
+          title: 'Земо Бетлеми',
+          description:
+            'Небольшая церквушка с красивыми видами на город. Если есть желание, то можно подняться выше к скульптупе мать Грузия, но сейчас проход с нее на крепость Нарикала закрыт, поэтмоу не веду тудой',
+          image:
+            'https://madloba.info/media/images/betlemi-street.2e16d0ba.fill-1366x768.format-webp.mwtmk.webp',
           additionalContent: [
             {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/7PvWxJT842jaV7jp8'
+              title: 'Шортс с местами из 1 и 2 точки',
+              isShorts: true,
+              youtubeLink:
+                'https://youtube.com/embed/P2GCg3PMX7Q?si=oWdGGlEDRKVAbLgL'
             }
           ]
         },
         {
-          id: '18',
-          title: 'Каньен Мартвили',
-          description: `Очень известное туристическое место, вход 15-20лари, за еще 15лари можно покататься на лодке минут 15
-          Вообще очень красиво там и впечатлсяюще`,
+          id: generateUID(),
+          title: 'Серные Бани',
+          description:
+            'Древние бани, в одной из них парился Пушкин, а атк вообще очень красивый вид и если откроют, то можно будет подойти к водопаду',
+          image:
+            'https://i0.wp.com/tipstrips.ru/wp-content/uploads/2019/03/%D0%9F%D0%B5%D1%81%D1%82%D1%80%D0%B0%D1%8F-%D0%9E%D1%80%D0%B1%D0%B5%D0%BB%D0%B8%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%B0%D0%BD%D1%8F-1-min.jpg?resize=870%2C580&ssl=1'
+        },
+        {
+          id: generateUID(),
+          title: 'Ботаническая улица',
+          description:
+            'Красивая улица, но самое приятное это проход к ней от ручья между домов',
           additionalContent: [
             {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/yt6TWaXswtyJKvFv8'
+              title: 'Узкие улицы в этом шортсе именно с этой местности',
+              isShorts: true,
+              youtubeLink:
+                'https://youtube.com/embed/0WlReDTRWfM?si=ILyvx9d4l9pjSHfw'
             }
           ],
           image:
-            'https://gotrip.ge/blog/wp-content/uploads/2022/12/shutterstock_1434243356.jpeg'
+            'https://i0.wp.com/tipstrips.ru/wp-content/uploads/2019/03/%D0%9F%D0%B5%D1%81%D1%82%D1%80%D0%B0%D1%8F-%D0%9E%D1%80%D0%B1%D0%B5%D0%BB%D0%B8%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F-%D0%B1%D0%B0%D0%BD%D1%8F-1-min.jpg?resize=870%2C580&ssl=1'
+        },
+        {
+          id: generateUID(),
+          title: 'Мейдан Базар',
+          description:
+            'Маленький подземный аутентичный рынок с интересными Грузинскими достопримечательностями',
+
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShgQTcYEao5PvdNuAJXb8elWlokwTQoQ5iVg&s'
+        },
+        {
+          id: generateUID(),
+          title: 'Церковь Або Тбилисского',
+          description:
+            'Буквально 10 метров с маршрута расположен выход к воде с красивой каменной церковью',
+
+          image: 'https://i.ytimg.com/vi/BroyQglA_20/maxresdefault.jpg'
+        },
+        {
+          id: generateUID(),
+          title: 'Храм Метехи',
+          description:
+            'Красивый храм, так еще и построен первый храм был в 5 веке, а дальше многократно востанавливался после нападений',
+
+          image:
+            'https://img.pac.ru/landmarks/409440/big/AB991FE37F0001014F4B75E4DF45D3C1.jpg'
+        },
+        {
+          id: generateUID(),
+          title: 'Дворец Царицы Дариджан(Балкон для фоток))',
+          description:
+            'Вот тут точно прийдется фоткать жену). Шикарное место для фоток с балкона',
+
+          image:
+            'https://madloba.info/media/images/dvorec-daredzhan-tbili.2e16d0ba.fill-1200x630.format-png.png'
+        },
+        {
+          id: generateUID(),
+          title: 'Мост Мира',
+          description:
+            'Туристы очень любят это место, да и виды с него приятные',
+
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR3gLG41p_1nKnFyA3mzonfn8AIgiPk_zZIg&s'
+        },
+        {
+          id: generateUID(),
+          title:
+            'Это еще не все, на маршруте много других классных мест, но мне надоело писать, сорри)',
+          description: '',
+
+          image:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR41ofRGjJroe9w7iUqaomJR5JTAjTmi2qarg&s'
         }
       ]
     },
     {
       id: '2',
-      title: 'Через Вардзию',
-      navigationRoute:
-        'https://yandex.ru/navi?rtext=41.788555%2C44.739831~41.593811%2C44.124545~41.381076%2C43.284224~41.642592%2C42.976353~41.843148%2C43.384046&rtt=auto', //add from yandex map
+      title: 'Ботанический сад',
+      navigationRoute: 'https://yandex.com.ge/maps/-/CHxiEYJJ', //add from yandex map
       description:
-        'Классный маршрут, через пещерный город исамую красивую крепость Грузии',
-      image: 'https://v-georgia.com/wp-content/uploads/2015/06/vardzia4.jpg',
-
-      children: [
+        'Очень красивый сад, несколько водопадов, красивая пророда, скалы и все это за 4 лари с человека. Вход около статуи "Мать-Грузия". Конкретный маршрут не прописал, но рекомендую пройти через весь сад, чтобы и возле бамбука и возле водопадов погулять',
+      image:
+        'https://nlevshits.com/wp-content/uploads/2023/09/botanicheskij-sad-0-e1694329823527.jpg',
+      additionalContent: [
         {
-          id: '21',
-          title: 'Каньен Дашбаши',
-          description: `Красивый каньен с стекляным мостом, но стоит много, поэтому можно просто взглянуть со стороны и ехать дальше`,
-          additionalContent: [
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/x7HzucvRf1V1ZvgF6'
-            }
-          ],
-          image:
-            'https://zectour.com/ru/image/loadimage?f=https://zectour.com/public/filemanager/1%20SEDANIT%20TUREBI/21%20DASHBASHI/2.jpg&w=480&h=400'
+          isShorts: true,
+          youtubeLink:
+            'https://youtube.com/embed/QP3V0e5NClU?si=eRGRxzST8eWHtzQB',
+          title: 'Наше видео c похода примерно с 1 точки.'
         },
         {
-          id: '22',
-          title: 'Вардзиа(пещерный город)',
-          description:
-            'Очень аутентичное место, главное не остановится и пройти в внутреннтих пещерах, вход возле церкви.',
-          image:
-            'https://img-fotki.yandex.ru/get/5310/41972460.a1/0_df31f_b2cafc59_orig.jpg',
-          additionalContent: [
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/11WhYkLyyZxDsK1s6'
-            }
-          ]
-        },
-        {
-          id: '23',
-          title: 'Крепость Рабат(Турецко-Грузинская крепость)',
-          description: `Самая красивая крепость в Грузии. Большая часть бесплатная, но есть и платная зона`,
-          additionalContent: [
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/ajBhXq422jeD8qbb9'
-            }
-          ],
-          image:
-            'https://hoponhopoff-tbilisi.com/wp-content/uploads/2018/04/Hop-on-hop-off-tbilisi-Borjomi-Krepost-Rabat-00001.jpg'
-        },
-        {
-          id: '24',
-          title: 'Боржоми',
-          description: `В городе производят воду Боржоми, а так ничего особого, но есть теплые источники.`,
-          image:
-            'https://georgia.in-facts.info/wp-content/uploads/2019/01/Most-petlya-okolo-otelya---Crowne-Plaza-Borjomi---Borzhomi-Gruziya.jpg',
-          additionalContent: [
-            {
-              title: 'Место на гугл картах',
-              link: 'https://maps.app.goo.gl/2g292a3MkUimhBVa8'
-            }
-          ]
+          title: 'Место на гугл картах',
+          link: 'https://maps.app.goo.gl/QZz3nhnGjDpJ8oUL8'
         }
       ]
+    },
+    {
+      id: generateUID(),
+      title: 'Мтацминда парк',
+      navigationRoute: 'https://yandex.com.ge/maps/-/CHxiqX9Y', //add from yandex map
+      description: `Классные виды на город. Довольно простой парк, но очень красиво расположен, если есит желание можно покататься на фуникулере или канатной дороге.
+        Есть пешие тропы в центр города, есть красивая горная тропа к черепашьему озеру`,
+
+      image:
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/60/19/80/day-view.jpg?w=800&h=500&s=1',
+      additionalContent: [
+        {
+          isShorts: true,
+          youtubeLink:
+            'https://youtube.com/embed/0_ZpMhz4vVI?si=5dJcwwNzvLfFgrlU',
+          title: 'Шортс'
+        },
+        {
+          title: 'Место на гугл картах',
+          link: 'https://maps.app.goo.gl/qHgeprhbEaP9nUss5'
+        }
+      ]
+    },
+    {
+      id: generateUID(),
+      title: 'Ваке и черепашье озеро',
+      navigationRoute: 'https://yandex.com.ge/maps/-/CHxi5Bnq', //add from yandex map
+      description: `Современный район, с точки которую обозначаю в новигаторе открывается вид на район, можно проехать на канатной дороге за 1 лари в 1 сторону. А если еще немного пройтись над озером, то вообще
+      будут потрясающие виды, возможно даже будет виден Кавказский хребет и Казбек`,
+
+      image:
+        'https://cdn.georgiantravelguide.com/storage/thumbnails/dji-0076-7.jpg',
+      additionalContent: [
+        {
+          isShorts: true,
+          youtubeLink:
+            'https://youtube.com/embed/ivWM_NY8SM4?si=5KFPfnmEKvJnamOZ',
+          title: 'Шортс'
+        },
+        {
+          title: 'Место на гугл картах',
+          link: 'https://maps.app.goo.gl/6MiXyfchKEPA19kM8'
+        }
+      ]
+    },
+    {
+      id: generateUID(),
+      title: 'Мемориал Хроники Грузии',
+      navigationRoute: 'https://yandex.com.ge/maps/-/CHxiBIKC', //add from yandex map
+      description: `Очень аутентичное место с барельефами из Библии и Истории Грузии`,
+
+      image: 'https://cdn.getyourguide.com/img/tour/63d03a683ec49.jpeg/68.jpg',
+      additionalContent: [
+        {
+          title: 'Место на гугл картах',
+          link: 'https://maps.app.goo.gl/6MiXyfchKEPA19kM8'
+        }
+      ]
+    },
+    {
+      id: generateUID(),
+      title: 'Еще один по старому городу',
+      navigationRoute:
+        'https://www.google.com/maps/dir/41.7178633,44.7912911/41.703223,44.8041886/41.7008275,44.8029622/41.6986568,44.7981292/41.7039316,44.7903487/@41.7051634,44.7887898,15.91z/data=!4m8!4m7!1m1!4e1!1m0!1m0!1m0!1m0!3e2?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D', //add from yandex map
+      description: `Рекомундую еще один маршрут, а вообще можно сходить и идти в разные стороны, у Тбилиси большой старый город, есть на что смотреть`,
+
+      image: 'https://mapsia.ru/img/tbilisi/david.jpg'
     }
   ]);
 

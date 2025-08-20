@@ -25,7 +25,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Авто маршрyты
+                Маршрyты
               </a>
               <ul class="dropdown-menu">
                 <li>
